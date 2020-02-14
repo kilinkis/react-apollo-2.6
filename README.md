@@ -23,3 +23,12 @@ and
 ```bash
 cd final/client && npm i && npm start
 ```
+
+Check and publish with the Apollo CLI  
+```bash
+npx apollo service:push --endpoint=http://localhost:4000
+```
+For subsequent publishes, we may first want to check for any breaking changes in our new schema against the old version. In a terminal window, run:
+```bash
+npx apollo service:check --endpoint=http://localhost:4000
+```
